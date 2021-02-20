@@ -1,0 +1,165 @@
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://g.alicdn.com/mtb/lib-flexible/0.3.2/flexible.js" crossorigin></script>
+  <script src="//g.alicdn.com/code/lib/qrcodejs/1.0.0/qrcode.min.js" crossorigin></script>
+          <link rel="stylesheet" href="https://g.alicdn.com/bsop-static/sufei-punish/0.0.104/build/main.css">
+ <style type="text/css">
+
+#J_Header{margin-top:0}
+    body,html{width: 100%;height: 100%;}
+    body{background-color: #f6f6f6;}
+    body,h1,p{margin:0;padding:0;font:normal normal 12px/1.5 Arial, Helvetica, sans-serif;}
+    .wrap{min-height: 100%;}
+    h1,.content,.copyright{width:990px;margin:0 auto;padding:25px 0;}
+    .copyright{text-align:center;}
+    input.submit{background-color: #F27214;color:#fff;width:90px;height:28px;margin-top:5px;border:0;display:inline-block;overflow: hidden;vertical-align: middle;line-height:26px;color:#fff;cursor:pointer;zoom: 1;}
+    input.checkcode{background:#fff;border:#ccc 1px solid;width:100px;height:22px;line-height:22px;font-size:12px;vertical-align:middle;}
+    h1 img{border:none;}
+    .content{padding-bottom: 50px;}
+    .msg{width:100%;height:503px;margin:0 auto;}
+    .youxianchupin{margin-bottom:0;padding-top: 50px;font-size:26px;line-height:180%;color:#333;}
+    .nanadoushiren{margin-top:30px;}
+    .gududezhanwei{height:120px;}
+    .b .gududezhanwei{height:70px;}
+    .a,.c{background-position:0 -350px;}
+    .d{background-position:0 -700px;}
+    .d .youxianchupin{font-size:16px;font-weight:bold;color:#f60;}
+    .e{background-position:0 -0px;}
+    .e .gududezhanwei{height:50px;}
+    .f{background-position:0 -1400px;}
+    .g{background-position:0 -1750px;}
+    .g .gududezhanwei{height:80px;}
+    .youxianchupin{margin-left:507px;color: #424242;font-family: tahoma,arial,Microsoft Yahei,\5b8b\4f53;}
+    .youxianchupin p{margin-top: 20px;font-size: 20px;opacity: .6;}
+    .deny p a{color: #C41220;text-decoration: none;}
+    .deny .gududezhanwei{height:80px;}
+    .deny{background: #fff url(http://gtms01.alicdn.com/tps/i1/T1AtsXFmBXXXargRT_-280-270.png) no-repeat left top; }
+    .needcode{background: #fff url(http://gtms01.alicdn.com/tps/i1/T1gbECFk0XXXaZZ8H_-280-255.png) no-repeat left top;}
+    .needcode p a{text-decoration: none;font-weight: normal;}
+    .footer{width:960px;margin: 0 auto;}
+    .needcode{margin-top: 40px;background-image: url(https://img.alicdn.com/tfs/TB1253QaLxNTKJjy0FjXXX6yVXa-427-503.jpg);background-color: #f6f6f6;}
+    .foot{height: 50px;margin-top: -50px;text-align: center;opacity: .4;color: #373637;font-size: 12px;}
+    #nocaptcha {margin-left:507px; margin-top: 65px; margin-right: 80px;height: 76px;}
+    #nocaptcha #nc_1_wrapper,.nc-container.tb-login #nc_1_wrapper {width:100%;height: 100%;background-color: #e1d9ff;border-radius: 38px;}
+    #nocaptcha .nc_scale{top:6px;height: 66px;margin-left: 6px;margin-right: 6px;background-color: transparent;border-radius: 33px;}
+    #nocaptcha .nc_scale .btn_slide {
+        width: 80px;
+        height: 64px;
+        border-radius: 32px;
+        color: #8c80fe;
+        font-size: 25px;
+        font-weight: 400;
+        border-color: transparent;
+        border-bottom-color: rgba(0,0,0,.11);
+    }
+    #nocaptcha .nc_scale span{
+      line-height: 64px;
+    }
+    #nocaptcha .nc_scale .nc_ok, #nocaptcha .nc_scale .nc_bg{
+        left: 40px;
+        background-color: #8c80fe;
+        border-radius: 33px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    #nocaptcha .nc_scale .nc_bg:after{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: -40px;
+        top: 0;
+        height: 100%;
+        width: 41px;
+        background-color: #8c80fe;
+        border-top-left-radius: 33px;
+        border-bottom-left-radius: 33px;
+    }
+
+    #nocaptcha .nc_scale .imgCaptcha, #nocaptcha .nc_scale .clickCaptcha,
+    #nocaptcha .imgCaptcha div{background: none;}
+    #nocaptcha .imgCaptcha, #nocaptcha .clickCaptcha {
+        margin-left: 33px;
+        margin-right: 33px;
+        border-color: none;
+    }
+    #nocaptcha .imgCaptcha,
+    #nocaptcha .nc_scale .clickCaptcha{
+        top: 70px;
+        border-color: transparent;
+    }
+
+    #nocaptcha .imgCaptcha .btn_refresh{
+        background-color: transparent;
+        color: #8c80fe;
+    }
+    #nocaptcha .imgCaptcha .imgCaptcha_btn{
+        background: #8c80fe;
+    }
+    #nocaptcha .errloading{
+        width: auto;
+        margin-right: 40px;
+        height: 76px;
+        padding: 0 15px;
+        border-color: #8c80fe;
+        color: #8c80fe;
+        border-radius: 38px;
+        line-height: 76px;
+        text-align: center;
+    }
+    #nocaptcha .errloading .icon_warn{
+        color: #8c80fe;
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+        margin-right: 12px;
+        margin-top: -1px;
+    }
+    </style>
+            </head>
+
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&trid=212c795f16137173374743581e0df0&asid=AQAAAABZXy9gW5OFfwAAAADt5i0B7hzXtg==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+
+    <punish-component />
+    <script>
+        window._config_ = {
+            "renderTo": "#nocaptcha",
+"logo":"https://gw.alicdn.com/tfs/TB1ToibfMoQMeJjy1XaXXcSsFXa-186-36.png",
+      "logoLink":"https://youku.com/",
+             "customImage":"https://img.alicdn.com/tfs/TB1253QaLxNTKJjy0FjXXX6yVXa-427-503.jpg",
+            "NCTOKENSTR": "79fdc15634ffe6a77df11ba1072a93ac",
+            "action": "captcha",
+            "HOST": "so.youku.com:443",
+			"PATH": "/search_video/q_%E9%A6%99%E6%B8%AF%E5%A5%87%E6%A1%88%E5%AE%9E%E5%BD%95-%E4%BA%94%E5%B0%B8%E7%A6%BB%E5%A5%87%E5%91%BD%E6%A1%88",
+            "FORMACTIOIN": "/_____tmd_____/verify/",
+            "BXSTEP": "100",
+            "SECDATA": "5e0c8e1365474455070961b803bd560607b52cabf5960afff39b64ce58073f7824f43967c3ce336ff15394651dad85631dd9ca4f6f27dba61c3df0d9fb4404384910591683fd4795ce3d9f7b6618de9a972e3beacde0eb69f79110b54a2d434c9fb628ac812742d27bff2d653f92ff6ea967b08384652bbbd8043f5cb13c821f30c82dc473e30495ef569ee567a7e7bd6eb99f4c75eab7ebf2b34e677281bf77ad978dbbc5a779d3ddcc3d02fa64d7051e15f7d80dc79147c50accefd661281a9212e79c16ecb44811e396451dcf0570be5b30f6740dfac5f8a7130a495993687f98cb6e729c49499ccac8461c36a4ff29e12fa7f35ca4ae21995ca4b8e65483cfd98dacf97c9400e801310f7c17378a740b2410c08e7bd91336c344c8d857ee3d80acae2e4c3948d738d9469dcb34980ed0fd78e9cc2e5a61d83a01692b75a16368ab5a5f4b308ba5d5b39012658f573db09200156ecf157746c4a977a220ba7c9e556596844af893940ebe45621867bcf9e5086c2989503e0a9cf1abcca7455f57919f0acf7c85d19a476bbd6669d0845ebbb7c256e077889b653f76774fc4c74ee8e9e999cde873522a2663ee17e865e87d8dbb5de64fdf477d59b77ddca8029f7dd033d921c93580a2eee6042be0266c4467ecf4cf64f12ae6ddc0376b71445f0a08107fa7f490f25d9c4753cccc7213f16c6e314c6d453533e86934215134f0295d941e7ee5f3ee3968bd0a6d8a911a7a021a18a675470d3d816649ffc0f89a75f85e51b16d1f00e659179637c8191b42ee5b771e766124ca0a59241df33342f839c831e500d01629ad2968512f24a8d545d5b930ad3f55ac7b068dac34e5ff7303d0b54a6af1651306f6d1b54293c9fb354acff16c8c1011680ce8815a9e4ad85ab8c178561b8c28fc0cb8b1ac26acfb16e9090a27869f87481c10c2d174d1a0023672457f1d3e9e4c7ded48692c3624cd198b9a8de00b5dcb16926512",
+            "NCAPPKEY": "X82Y__5bd161237c50362da4d391de06975b74"
+        }
+    </script>
+</body>
+ <script src="//g.alicdn.com/bsop-static/sufei-punish/0.0.104/build/punishpage.min.js" crossorigin></script>
+<script type="text/javascript"
+    src="https://g.alicdn.com/dt/tracker/4.0.0/??tracker.Tracker.js,tracker.interfaceTrackerPlugin.js,tracker.performanceTrackerPlugin.js"
+    crossorigin></script>
+
+  <script type="text/javascript">
+    var tracker = new window.Tracker({uidResolver: function() {
+    // 具体获取 userId 逻辑自行实现
+  return "79fdc15634ffe6a77df11ba1072a93ac__1.1.1";
+  },  pid: 'punish-page', plugins: [[window.interfaceTrackerPlugin], [window.performanceTrackerPlugin, { sampleRate: 1 }]] });
+    tracker.install();
+    tracker.log({
+      code: 11,  // 系统自动生成，请勿修改 100%
+      c1: '79fdc15634ffe6a77df11ba1072a93ac',  
+      msg: '霸下通用客户端-验证码',  // 异常信息，推荐传入
+      sampleRate: 1.00,  // 目前采样率为 100.00%
+    });
+  </script>
+
+</html>
